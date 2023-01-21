@@ -1,0 +1,69 @@
+html {
+  /* Colors */
+  --color-text: #000;
+  --color-border: #afafaf;
+  --color-border-red: #ff0000;
+  --color-border-green: #2ed321;
+  --color-button: #f1f1f1;
+  --color-button-hover: #d1d1d1;
+  --color-bg-default: #fff;
+  --color-bg-blue: #f0f8ff;
+  --color-bg-dark: #000;
+
+   /* Other */
+   --border-radius: 6px;
+}
+
+html,
+body {
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px;
+  text-align: center;
+}
+
+@keyframes deleteAnimate {
+  0% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  25% {
+    border-top-color: var(--color-border-red);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    border-top-color: var(--color-border-red);
+    border-right-color: var(--color-border-red);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  75% {
+    border-top-color: var(--color-border-red);
+    border-right-color: var(--color-border-red);
+    border-bottom-color: var(--color-border-red);
+    border-left-color: transparent;
+  }
+  100% {
+    border-top-color: var(--color-border-red);
+    border-right-color: var(--color-border-red);
+    border-bottom-color: var(--color-border-red);
+    border-left-color: var(--color-border-red);
+  }
+}
